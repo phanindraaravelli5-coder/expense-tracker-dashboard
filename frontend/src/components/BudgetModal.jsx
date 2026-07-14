@@ -25,6 +25,7 @@ export default function BudgetModal({ isOpen, onClose, onSave, categories, month
         setCategoryId(categories[0].id.toString());
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categories]);
 
   const fetchCategories = async () => {

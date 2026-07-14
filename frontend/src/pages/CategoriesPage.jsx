@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { apiClient } from "../services/api";
-import { Download, Trash2 } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import { toast } from "react-toastify";
 
 export default function CategoriesPage() {

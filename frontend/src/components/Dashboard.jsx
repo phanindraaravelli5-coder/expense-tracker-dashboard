@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
-  BarChart,
-  Bar,
   PieChart,
   Pie,
   Cell,
-  LineChart,
   Line,
   XAxis,
   YAxis,
@@ -30,6 +27,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     fetchStats();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [month, year]);
 
   const fetchStats = async () => {
